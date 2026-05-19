@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cssjmn0ftkc40"]
+
+[ext_resource type="Script" uid="uid://c37pq8r4m6jy" path="res://_/Scripts/main.gd" id="1_klegn"]
+
+[node name="Main" type="Node2D" unique_id=877170777]
+script = ExtResource("1_klegn")
+
+[node name="Label" type="Label" parent="." unique_id=1328651928]
+offset_left = 260.0
+offset_top = 139.0
+offset_right = 976.0
+offset_bottom = 501.0
+theme_override_font_sizes/font_size = 76
+text = "This a Label"
+horizontal_alignment = 1
+vertical_alignment = 1
