@@ -1,9 +1,11 @@
 extends Node2D
 
+enum Alignment  {ALLY, NEUTRAL, ENEMY }
+
+@export var unit_alignment : Alignment
+
 func _ready():
-	var items: Array[String] = ["Potion", "Feather", "Stolen harp"]
-	items[1] = "Smelly Sock"
-	items[2] = "Staff"
-	
-	items.remove_at(1)
-	items.append("Overpowered sword")
+	if unit_alignment == Alignment.ENEMY:
+		print("You are not welcome here.")
+	else:
+		print("Welcome")

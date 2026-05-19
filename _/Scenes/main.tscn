@@ -4,3 +4,4 @@
 
 [node name="Main" type="Node2D" unique_id=877170777]
 script = ExtResource("1_klegn")
+unit_alignment = 1
