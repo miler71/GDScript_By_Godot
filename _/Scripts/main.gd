@@ -1,15 +1,20 @@
 extends Node2D
 
+var health = 100
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	$Label.text = "Hello, World !"
-	$Label.modulate = Color.DARK_SLATE_BLUE
 
 func _input(event):
-	if event.is_action_pressed("change_color"):
-		$Label.modulate = Color.DARK_RED
-	
-	if event.is_action_released("change_color"):
-		$Label.modulate = Color.DARK_SLATE_BLUE
-	
+	if event.is_action_pressed("my_action"):
+		health -= 20 
+		 
+		print(health)
+		
+		if health <= 0:
+			health = 0
+			print("YOU DIED !")
+		elif health < 50: 
+			print("YOU ARE INJURED !")
+		else: 
+			print("You are in health !")
+		
+		
