@@ -1,7 +1,10 @@
 extends Node2D
 
-@export var damage := 15
+func _input(event):
+	if event.is_action_pressed("my_action"):
+		jump()
 
-
-func _ready(): 
-	pass
+func jump():
+	
+	
+	print("Jump!")
